@@ -21,11 +21,22 @@
     <!-- Custom CSS -->
     <link href="<?= base_url(); ?>assets/css/sb-admin-2.css" rel="stylesheet">
 
+    <!-- DataTables CSS -->
+    <link href="<?= base_url(); ?>assets/datatables/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="<?= base_url(); ?>assets/datatables/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+
     <!-- Morris Charts CSS -->
     <link href="<?= base_url(); ?>assets/css/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="<?= base_url(); ?>assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- <link href="<?= base_url(); ?>assets/datatables/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css">
+
+    <link href="<?= base_url(); ?>assets/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"> -->
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

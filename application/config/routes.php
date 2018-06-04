@@ -54,6 +54,9 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 
+
+
+
 // $route['/(:any)'] = 'Dashboard';
 
 // $route['Tables'] = 'Tables';
