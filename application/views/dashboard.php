@@ -126,7 +126,7 @@
                                         <th>Nome</th>
                                         <th>Senha</th>
                                         <th>E-mail</th>
-                                        <th></th>
+                                        <th>Options</th>
                                       
                                     </tr>
                                 </thead>
@@ -140,14 +140,14 @@
                                     <tr class="odd gradeX">
 
                                        
-                                        <td><?= $usuario->id; ?></td>
-                                        <td><?= $usuario->nome; ?></td>
-                                        <td><?= $usuario->senha; ?></td>
-                                        <td><?= $usuario->email; ?></td>
+                                        <td><?= $usuario->id_usu; ?></td>
+                                        <td><?= $usuario->usu_nome; ?></td>
+                                        <td><?= $usuario->usu_senha; ?></td>
+                                        <td><?= $usuario->usu_email; ?></td>
                                         <td>
-                                            <a href="<?= base_url('Usuario/alterar/'.$usuario->id) ?>" type="button" class="btn btn-primary">Atualizar</a>
+                                            <a href="<?= base_url('Usuario/alterar/'.$usuario->id_usu) ?>" type="button" class="btn btn-primary">Atualizar</a>
                                               -  
-                                            <a href="<?= base_url('Usuario/remover/'.$usuario->id) ?>" type="button" class="btn btn-danger">Remover</a>
+                                            <a href="<?= base_url('Usuario/remover/'.$usuario->id_usu) ?>"  type="button" class="btn btn-danger">Remover</a>
                                         </td>
                                       
                                         <!-- <td>Internet Explorer 4.0</td>

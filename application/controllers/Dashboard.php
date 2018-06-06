@@ -8,7 +8,7 @@ class Dashboard extends CI_Controller {
 	{
 
 		$this->db->select('*');
-		$dados['user'] = $this->db->get('usuario')->result();
+		$dados['user'] = $this->db->get('usu')->result();
 	
 		// echo "<div>";
 		// var_dump($dados['usuarios']);
