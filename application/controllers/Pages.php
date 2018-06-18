@@ -22,5 +22,11 @@ class Pages extends CI_Controller {
 		$this->load->view('templates/html_footer', $data); }
 
 	}
+
+	public function cadastrar() {
+
+		echo "caiu no cadastrar";
+		
+	}
 }
 
