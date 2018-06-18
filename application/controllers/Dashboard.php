@@ -15,10 +15,10 @@ class Dashboard extends CI_Controller {
 		// echo "</div>";
 		
 
-		$this->load->view('includes/html_header');
-		$this->load->view('includes/menu');
+		$this->load->view('templates/html_header');
+		$this->load->view('templates/menu');
 		$this->load->view('dashboard',$dados);
-		$this->load->view('includes/html_footer');
+		$this->load->view('templates/html_footer');
 	}
 
 

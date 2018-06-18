@@ -25,20 +25,24 @@ class Usuario extends CI_Controller {
 	}
 
 
-	public function cadastrar()
-	{
-		echo "CAIU NO METODO CADASTRAR";
-		$data['nome'] = $this->input->post('nome'); 
-		$data['senha'] = $this->input->post('senha'); 
+	public function cadastrar()	{
 
-		if ($this->db->insert('usu',$data)) {
-			redirect('Dashboard/1');
+		echo "CAIU NO METODO CADASTRAR";
+		// $data['nome'] = $this->input->post('nome'); 
+		// $data['senha'] = $this->input->post('senha'); 
+
+		$data['ticket_id_usu'] = '51';
+		$data['ticket_titulo'] = 'QUALQUER TITULO';
+
+
+		if ($this->db->insert('ticket',$data)) {
+			$this->load->view('/success/success.php');
 		}else
 			redirect('Dashboard/2');
 
 	}
 
-	}
+	
 
 	public function remover($id) {
 		// echo "caiu no alterar".$id;
