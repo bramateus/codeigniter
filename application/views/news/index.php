@@ -38,7 +38,7 @@ print_r($usu);
 
                                 	 <!-- <?php print_r($usu2); ?> -->
                                 
-                                    <div class="huge"><td><?= $usua['total'] ?></td></div>
+                                    <div class="huge"><td><?= $usu_number['total'] ?></td></div>
                                     <div>Usuários Cadastrados</div>
                                 </div>
                             </div>
@@ -159,9 +159,8 @@ print_r($usu);
                                 <tbody>
 
 
-
                                     <?php foreach($data2 as $id => $usuario){ ?>
-                                   
+
                                    
                              	
 

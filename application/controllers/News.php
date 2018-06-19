@@ -10,9 +10,11 @@ class News extends CI_Controller {
 	}
 
 	public function index() {
+
 		$data2 = $this->news_model->get_news();
 		$data['usua'] = $this->news_model->get_number_usu();
 		$dataTotal['bolsas'] = $this->news_model->get_total_cursos();
+
 
 		 // print_r($data2);
 
