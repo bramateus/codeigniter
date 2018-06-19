@@ -38,12 +38,21 @@ class News_model extends CI_MODEL {
 		return $this->db
                 ->select("count(id_usu) as total")
                 ->from("usu as usua")
-
                 // ->limit(1)
                 ->get()
                 ->row_array();
 
+	}
 
+	public function get_total_cursos() {
+
+
+		return $this->db
+			   ->select('count(id_bolsa) as b')
+			   ->from('bolsa')
+			   ->get()
+			   ->row_array();
+			   
 
 	}
 

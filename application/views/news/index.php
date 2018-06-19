@@ -60,8 +60,11 @@ print_r($usu);
                                     <i class="fa fa-tasks fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
-                                    <div class="huge">12</div>
-                                    <div>New Tasks!</div>
+
+                                	<!-- <?php print_r($dataTotal); ?> -->
+                                	 <?php print_r($dataTotal['bolsas']['b']) ?>
+                                    <div class="huge"><?= $dataTotal['bolsas']['b'] ?></div>
+                                    <div>Total de Cursos</div>
                                 </div>
                             </div>
                         </div>
@@ -157,9 +160,9 @@ print_r($usu);
 
 
 
-                                    <?php foreach($usu2 as $usuario){ ?>
+                                    <?php foreach($data2 as $id => $usuario){ ?>
                                    
-                                    	<!-- <?php print_r($usuario); ?> -->
+                                   
                              	
 
                                     <tr class="odd gradeX">

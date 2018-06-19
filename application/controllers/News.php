@@ -10,10 +10,11 @@ class News extends CI_Controller {
 	}
 
 	public function index() {
-		$data2['usu2'] = $this->news_model->get_news();
+		$data2 = $this->news_model->get_news();
 		$data['usua'] = $this->news_model->get_number_usu();
+		$dataTotal['bolsas'] = $this->news_model->get_total_cursos();
 
-		// print_r($data2);
+		 // print_r($data2);
 
 
 		// $data['title'] = 'Todos os usuario';
@@ -22,7 +23,7 @@ class News extends CI_Controller {
 
 		$this->load->view('templates/html_header', $data);
 		$this->load->view('templates/menu', $data);
-		$this->load->view('news/index', $data2, $data);
+		$this->load->view('news/index', compact('data2', 'data', 'dataTotal'));
 		$this->load->view('templates/html_footer', $data);
 	}
 
