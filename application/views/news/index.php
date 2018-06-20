@@ -36,9 +36,10 @@ print_r($usu);
                                 </div>
                                 <div class="col-xs-9 text-right">
 
-                                	 <!-- <?php print_r($usu2); ?> -->
+                                	 <!-- <?php print_r($data); ?> -->
                                 
-                                    <div class="huge"><td><?= $usu_number['total'] ?></td></div>
+                                    <!-- <div class="huge"><td><?= $usu_number['total'] ?></td></div> -->
+                                    <div class="huge"><td><?= $data['total'] ?></td></div>
                                     <div>Usuários Cadastrados</div>
                                 </div>
                             </div>
@@ -57,13 +58,13 @@ print_r($usu);
                         <div class="panel-heading">
                             <div class="row">
                                 <div class="col-xs-3">
-                                    <i class="fa fa-tasks fa-5x"></i>
+                                    <i class="fa fa-book fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9 text-right">
 
                                 	<!-- <?php print_r($dataTotal); ?> -->
-                                	 <?php print_r($dataTotal['bolsas']['b']) ?>
-                                    <div class="huge"><?= $dataTotal['bolsas']['b'] ?></div>
+                                	 <!-- <?php print_r($dataTotal) ?> -->
+                                    <div class="huge"><?= $dataTotal['b'] ?></div>
                                     <div>Total de Cursos</div>
                                 </div>
                             </div>
